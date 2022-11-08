@@ -1,0 +1,10 @@
+labtainer users
+<email>
+useradd -m bob
+passwd bob
+<enter password>
+<confirm >
+passwd --expire bob
+
+su bob
+
