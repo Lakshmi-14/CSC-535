@@ -19,7 +19,7 @@ class Network:
 
     # Display the resultant shortest paths rooted at "source"
     def disp_short_weights(self, source):
-        print("Distance of node from Source ")
+        print("Distance of each node from Source using Dijkstra on Figure-3 ")
         for (node, weight) in self.visited.items():
             print(source, "->", node.ljust(3), ":", weight)
 
@@ -80,3 +80,5 @@ if __name__ == "__main__":
 
     # Performing Dijkstra Algorithm to find shortest-path tree
     net.dijkstra("A")
+    
+    input("\n\n\n Press Enter to exit...")
