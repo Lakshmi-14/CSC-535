@@ -15,7 +15,7 @@ class Network:
 
     # Display Result
     def disp_short_weights(self, source, network_map):
-        print("Shortest-path tree using Bellman-Ford algorithm")
+        print("Shortest-path tree using Bellman-Ford algorithm on Figure-2")
         for (node, weight) in network_map.items():
             print(source, "->", node.ljust(3), ":", weight)
     
