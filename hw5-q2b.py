@@ -1,20 +1,25 @@
+# Defining Network
 class Network:
     def __init__(self, node_count):
         self.n_count = node_count
         self.network = list()
         self.nodes = list()
-
+    
+    # Add vertices/nodes
     def add_vertex(self, ver_val):
         self.nodes.append(ver_val)
-
+    
+    # Add edges / connections to the network
     def add_connection(self, source, dest, weight):
         self.network.append([source, dest, weight])
 
+    # Display Result
     def disp_short_weights(self, source, network_map):
         print("Shortest-path tree using Bellman-Ford algorithm")
         for (node, weight) in network_map.items():
             print(source, "->", node.ljust(3), ":", weight)
-
+    
+    # Implementation of Bellman-Ford algorithm
     def bellManFord(self, source):
         net_source = source
         dist = {node: float("inf") for node in self.nodes}
@@ -53,3 +58,5 @@ if __name__ == "__main__":
     net.add_connection("C", "D", 4)
 
     net.bellManFord("A")
+    
+    input("\n\n\n Press Enter to exit....")
