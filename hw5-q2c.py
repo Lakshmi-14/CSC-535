@@ -18,7 +18,7 @@ class Network:
 
     # Display result
     def disp_short_weights(self, source, network_map):
-        print("Distance of node from Source ")
+        print("Distance of node from Source using Bellman-Ford on Figure-3 ")
         for (node, weight) in network_map.items():
             print(source, "->", node.ljust(3), ":", weight)
 
