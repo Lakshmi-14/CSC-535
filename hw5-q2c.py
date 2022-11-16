@@ -68,3 +68,5 @@ if __name__ == "__main__":
 
     # Performing Bellman-Ford Algorithm
     net.bellManFord("A")
+    
+    input("\n\n\n Press Enter to exit...")
