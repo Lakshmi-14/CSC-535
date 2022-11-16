@@ -18,7 +18,7 @@ class Network:
 
     # Display Result
     def disp_short_weights(self, source):
-        print("Shortest-path tree using Dijkstra algorithm")
+        print("Shortest-path tree using Dijkstra algorithm on Figure-2")
         for (node, weight) in self.visited.items():
             print(source, "->", node.ljust(3), ":", weight)
 
@@ -76,3 +76,5 @@ if __name__ == "__main__":
 
     # Performing the Algorithm 
     net.dijkstra("A")
+    
+    input("\n\n\n Press Enter to exit...")
