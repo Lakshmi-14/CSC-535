@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+'''
+OS : Windows 10
+author : Kalagiri Narendhar
+encoding : UTF-8
+'''
+
+
 # Define Network Class
 class Network:
     def __init__(self, node_count):
