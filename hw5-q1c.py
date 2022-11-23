@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+'''
+author : Ashok Ajmeera
+encoding UTF-8
+OS : windows 10 
+'''
+
+
 def dijkstra(src):
     lengths = {ele: None for ele in 'ABCDEFGHJK'}
     lengths[src] = 0
@@ -36,7 +44,6 @@ if __name__ == "__main__":
 
     init_source = "A"
     sol_array = dijkstra(init_source)
-
     print("\n\nsource ----> destination : shortest Distance")
     print("----"*10)
     for (node, length) in sol_array.items():

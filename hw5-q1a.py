@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+'''
+author : Ashok Ajmeera
+encoding UTF-8
+OS : windows 10 
+'''
+
+
 def dijkstra(src):
     lengths = {ele: None for ele in 'SABCDt'}
     lengths[src] = 0
